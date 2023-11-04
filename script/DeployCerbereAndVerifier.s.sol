@@ -18,6 +18,7 @@ contract DeployCerbereAndVerifier is Script {
         }
         vm.startBroadcast(deployerKey);
         Halo2Verifier halo2Verifier = new Halo2Verifier();
+
         Cerbere cerbere = new Cerbere(halo2Verifier);
         vm.stopBroadcast();
         return (halo2Verifier, cerbere);
