@@ -43,4 +43,4 @@ ifeq ($(findstring --network polygonzkevm_testnet,$(ARGS)),--network polygonzkev
 endif
 
 deploy:
-	@forge script script/DeployHalo2Verifier.s.sol:DeployHalo2Verifier $(NETWORK_ARGS)
+	@forge script script/DeployCerbereAndVerifier.s.sol:DeployCerbereAndVerifier $(NETWORK_ARGS)
